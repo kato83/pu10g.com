@@ -1,0 +1,10 @@
+uuid: df7e50a4-fc4c-4a4a-8189-e1a36bce30d3
+langcode: ja
+status: true
+dependencies: {  }
+id: media_image
+label: 'Media image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

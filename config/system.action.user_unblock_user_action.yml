@@ -1,0 +1,13 @@
+uuid: 2b5688c7-a330-4be6-b2c4-82b3c9f1c8d3
+langcode: ja
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: SPsUXsR3Rc8d1y3gewzaAKWa1ncea_ywXX3f7LTn7k0
+id: user_unblock_user_action
+label: 選択されたユーザーのブロックを解除
+type: user
+plugin: user_unblock_user_action
+configuration: {  }

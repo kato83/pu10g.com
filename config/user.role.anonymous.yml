@@ -1,0 +1,14 @@
+uuid: a784c768-37d2-4358-bd8f-c35b5657affd
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 匿名ユーザー
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'view media'

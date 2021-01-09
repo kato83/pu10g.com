@@ -1,0 +1,10 @@
+uuid: f64a6cba-2386-4099-ae70-4ef89c9b05c8
+langcode: ja
+status: true
+dependencies: {  }
+id: markdown
+label: Markdown
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

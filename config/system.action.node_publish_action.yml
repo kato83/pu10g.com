@@ -1,0 +1,13 @@
+uuid: 3349ce31-a8a1-4e1a-a9d2-efb419f10394
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 2B9uF8NL5gutNKSdPRAhhAsDWFZZG1PJOBmx0aBGd_0
+id: node_publish_action
+label: コンテンツを掲載
+type: node
+plugin: 'entity:publish_action:node'
+configuration: {  }

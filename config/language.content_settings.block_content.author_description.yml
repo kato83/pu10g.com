@@ -1,0 +1,11 @@
+uuid: a64f48c5-1556-4eda-803b-c9596bf199d2
+langcode: ja
+status: true
+dependencies:
+  config:
+    - block_content.type.author_description
+id: block_content.author_description
+target_entity_type_id: block_content
+target_bundle: author_description
+default_langcode: site_default
+language_alterable: false

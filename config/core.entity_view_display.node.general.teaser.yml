@@ -1,0 +1,22 @@
+uuid: e24250e0-043b-4a3c-b42a-2dc2c565d677
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.general.field_block
+    - field.field.node.general.field_sidebar_position
+    - node.type.general
+  module:
+    - user
+id: node.general.teaser
+targetEntityType: node
+bundle: general
+mode: teaser
+content: {  }
+hidden:
+  content_moderation_control: true
+  field_block: true
+  field_sidebar_position: true
+  langcode: true
+  links: true

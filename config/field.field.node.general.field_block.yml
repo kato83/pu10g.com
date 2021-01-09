@@ -1,0 +1,32 @@
+uuid: 7f932b0f-5887-4cf4-9498-dcab473b9d86
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block
+    - node.type.general
+  module:
+    - entity_reference_revisions
+id: node.general.field_block
+field_name: field_block
+entity_type: node
+bundle: general
+label: パラグラフ
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      image:
+        weight: -4
+        enabled: false
+      markdown:
+        weight: -5
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 5afe0ddc-545e-40dc-9dd3-24d5b4bb33ea
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_markdown
+    - paragraphs.paragraphs_type.markdown
+  module:
+    - md
+id: paragraph.markdown.field_markdown
+field_name: field_markdown
+entity_type: paragraph
+bundle: markdown
+label: Markdown
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: md_type

@@ -1,0 +1,23 @@
+uuid: 742ba3e9-0092-4d6b-857e-ee5fd35a352b
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.markdown.field_markdown
+    - paragraphs.paragraphs_type.markdown
+  module:
+    - md
+id: paragraph.markdown.default
+targetEntityType: paragraph
+bundle: markdown
+mode: default
+content:
+  field_markdown:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: md_widget_default
+    region: content
+hidden:
+  created: true
+  status: true

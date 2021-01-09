@@ -1,0 +1,23 @@
+uuid: 5131a95b-b020-4abb-9788-7b42fdab5b23
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pu10g
+id: pu10g_footer_branding
+theme: pu10g
+region: footer
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: サイトブランディング
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

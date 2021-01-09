@@ -1,0 +1,11 @@
+uuid: 2ec75ae5-509a-46dd-9c84-ca6381116c34
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.general
+id: node.general
+target_entity_type_id: node
+target_bundle: general
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: ad791e14-0f65-4a3b-8b4e-a78dcf67860c
+langcode: ja
+status: true
+dependencies:
+  module:
+    - md
+    - paragraphs
+id: paragraph.field_markdown
+field_name: field_markdown
+entity_type: paragraph
+type: md_type
+settings: {  }
+module: md
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

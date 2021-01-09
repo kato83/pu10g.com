@@ -1,0 +1,25 @@
+uuid: 65fcd280-951c-4733-b918-ee9b5df668c0
+langcode: ja
+status: true
+dependencies:
+  content:
+    - 'block_content:author_description:8520b9b6-a587-48dd-baea-701a22e605b9'
+  module:
+    - block_content
+  theme:
+    - pu10g
+id: authordescription
+theme: pu10g
+region: footer
+weight: -2
+provider: null
+plugin: 'block_content:8520b9b6-a587-48dd-baea-701a22e605b9'
+settings:
+  id: 'block_content:8520b9b6-a587-48dd-baea-701a22e605b9'
+  label: Author
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

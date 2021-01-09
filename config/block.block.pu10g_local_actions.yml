@@ -1,0 +1,20 @@
+uuid: 8bb5dbfd-f040-40b0-8712-a060ab050966
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - pu10g
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: pu10g_local_actions
+theme: pu10g
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: プライマリ管理アクション
+  provider: core
+  label_display: '0'
+visibility: {  }

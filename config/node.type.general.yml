@@ -1,0 +1,11 @@
+uuid: 5b90ba9d-4c7b-4521-aee6-0bfac7bbe544
+langcode: ja
+status: true
+dependencies: {  }
+name: General
+type: general
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

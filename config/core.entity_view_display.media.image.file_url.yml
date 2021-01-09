@@ -1,0 +1,29 @@
+uuid: 8114cda0-fb98-49fc-bd73-cc45bd8de610
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.file_url
+    - field.field.media.image.field_media_image
+    - media.type.image
+  module:
+    - image
+id: media.image.file_url
+targetEntityType: media
+bundle: image
+mode: file_url
+content:
+  field_media_image:
+    label: hidden
+    weight: 0
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

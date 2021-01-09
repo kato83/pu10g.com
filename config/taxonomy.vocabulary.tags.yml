@@ -1,0 +1,8 @@
+uuid: 65bb4da7-74c6-4d8e-b2fd-642f578babbb
+langcode: ja
+status: true
+dependencies: {  }
+name: タグ
+vid: tags
+description: ''
+weight: 0

@@ -1,0 +1,34 @@
+uuid: c1b95640-569e-4086-883d-a4563fc4dce6
+langcode: ja
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_block
+    - field.field.node.article.field_list_image
+    - field.field.node.article.field_summary
+    - field.field.node.article.field_tag
+    - node.type.article
+  module:
+    - user
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_list_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: file_url
+      link: false
+    third_party_settings: {  }
+hidden:
+  content_moderation_control: true
+  field_block: true
+  field_summary: true
+  field_tag: true
+  langcode: true
+  links: true

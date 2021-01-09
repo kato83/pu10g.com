@@ -1,0 +1,15 @@
+uuid: 7e268354-7a10-4029-a3eb-3941e7d06839
+name: Pulog
+mail: katomeganeb83@gmail.com
+slogan: 'プログラムのブログ 略してプログ'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: ja
+default_langcode: ja
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

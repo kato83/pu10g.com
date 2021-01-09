@@ -1,0 +1,25 @@
+uuid: cd1873ce-60e8-4755-b342-f28aadaff33b
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pu10g
+_core:
+  default_config_hash: fRKXNB91UxDvEMkzCR8ZBsawfC6Fqbme2gtobei3gu4
+id: pu10g_branding
+theme: pu10g
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: サイトブランディング
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

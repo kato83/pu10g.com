@@ -1,0 +1,8 @@
+uuid: 5eafc8a5-9d66-4ed4-9884-87b338bf4bbc
+langcode: ja
+status: true
+dependencies: {  }
+id: author_description
+label: 'Author Description'
+revision: 1
+description: ''

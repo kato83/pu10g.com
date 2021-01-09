@@ -1,0 +1,24 @@
+uuid: 77e80d03-7019-4afe-8f59-d72123904ba2
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_image.field_media_image
+    - paragraphs.paragraphs_type.media_image
+  module:
+    - media_library
+id: paragraph.media_image.default
+targetEntityType: paragraph
+bundle: media_image
+mode: default
+content:
+  field_media_image:
+    type: media_library_widget
+    weight: 0
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

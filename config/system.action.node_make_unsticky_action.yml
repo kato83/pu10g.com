@@ -1,0 +1,13 @@
+uuid: 3eac450a-150e-4ad7-8271-8521e8ef0dbe
+langcode: ja
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: lDM9mvIGAu8Sw8rt-uCO4Sr7yX5VPrDPxYcawkbKd6k
+id: node_make_unsticky_action
+label: コンテンツをリスト上部に固定しない
+type: node
+plugin: node_make_unsticky_action
+configuration: {  }

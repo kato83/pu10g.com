@@ -1,0 +1,8 @@
+uuid: 46b16b0d-bd67-4d2d-8693-9c0fbed5b40b
+langcode: ja
+status: true
+dependencies: {  }
+name: フリーHTML
+format: free_html
+weight: 0
+filters: {  }

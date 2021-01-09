@@ -1,0 +1,23 @@
+uuid: 332423be-20f5-4a9b-b388-aaac4e53aca6
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pu10g
+id: pu10g_sidebar_branding
+theme: pu10g
+region: sidebar
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: サイトブランディング
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

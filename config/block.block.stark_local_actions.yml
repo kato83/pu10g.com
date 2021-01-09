@@ -1,0 +1,20 @@
+uuid: b015ca88-65fd-4417-b8ad-6580ec00d10c
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - stark
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: stark_local_actions
+theme: stark
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: プライマリ管理アクション
+  provider: core
+  label_display: '0'
+visibility: {  }

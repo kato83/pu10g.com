@@ -1,0 +1,49 @@
+uuid: 4a3f9c74-acc1-4a3a-99e6-b4f49760ec22
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_block
+    - field.field.node.article.field_list_image
+    - field.field.node.article.field_summary
+    - field.field.node.article.field_tag
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - user
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  field_block:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_list_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: file_url
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_tag:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  content_moderation_control: true
+  field_summary: true
+  langcode: true
+  links: true

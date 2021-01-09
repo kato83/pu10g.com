@@ -1,0 +1,23 @@
+uuid: 383c7550-061f-407e-b7c6-ad3f19172f3b
+langcode: ja
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_container_narrow_flg
+    - taxonomy.vocabulary.tags
+id: taxonomy_term.tags.field_container_narrow_flg
+field_name: field_container_narrow_flg
+entity_type: taxonomy_term
+bundle: tags
+label: container_narrow_flg
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean

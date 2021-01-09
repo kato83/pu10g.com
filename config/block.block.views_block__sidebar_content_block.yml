@@ -1,0 +1,24 @@
+uuid: e1a2d934-d813-467e-8b09-7355d41cfda8
+langcode: ja
+status: true
+dependencies:
+  config:
+    - views.view.sidebar_content
+  module:
+    - views
+  theme:
+    - pu10g
+id: views_block__sidebar_content_block
+theme: pu10g
+region: sidebar
+weight: -1
+provider: null
+plugin: 'views_block:sidebar_content-block_1'
+settings:
+  id: 'views_block:sidebar_content-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -1,0 +1,12 @@
+uuid: 20dae812-3796-4e75-abf9-d68234186a7a
+langcode: ja
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: flXhTcp55yLcyy7ZLOhPGKGZobZQJdkAFVWV3LseiuI
+id: user.register
+label: 登録
+targetEntityType: user
+cache: true

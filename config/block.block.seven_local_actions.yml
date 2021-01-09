@@ -1,0 +1,20 @@
+uuid: 15cb9bb4-ab99-4d14-b9c2-4f5c6bd3bb3f
+langcode: ja
+status: true
+dependencies:
+  theme:
+    - seven
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: seven_local_actions
+theme: seven
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: プライマリ管理アクション
+  provider: core
+  label_display: '0'
+visibility: {  }

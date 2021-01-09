@@ -1,0 +1,22 @@
+uuid: a1ddfd7f-b6a1-4454-83a3-ce57b82ccfd5
+langcode: ja
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - stark
+_core:
+  default_config_hash: 5MNdk3fpMKx_xxBTcz2T11DL4XEU1H5SgHl8BsYdFsA
+id: stark_messages
+theme: stark
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: ステータスメッセージ
+  provider: system
+  label_display: '0'
+visibility: {  }

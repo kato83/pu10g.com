@@ -1,0 +1,23 @@
+uuid: 2c06c5b8-a227-4012-af53-a576e0d348f4
+langcode: ja
+status: true
+dependencies:
+  config:
+    - block_content.type.author_description
+    - field.field.block_content.author_description.body
+  module:
+    - text
+id: block_content.author_description.default
+targetEntityType: block_content
+bundle: author_description
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

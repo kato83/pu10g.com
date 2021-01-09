@@ -1,0 +1,10 @@
+uuid: fcb9a8c1-53e9-4996-97df-0964951036f9
+langcode: ja
+status: true
+dependencies:
+  module:
+    - media
+id: media.file_url
+label: 'File URL'
+targetEntityType: media
+cache: true

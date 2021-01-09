@@ -1,0 +1,14 @@
+uuid: 32f10edb-faaf-4572-9673-ca9869ccde66
+langcode: ja
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 認証済みユーザー
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format free_html'
+  - 'view media'
