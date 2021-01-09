@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\img\Controller\ImgController;
+
+/**
+ * Implements hook_entity_presave().
+ */
+function img_node_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  $imgController = new ImgController();
+  $imgController->createImage($entity);
+  //$imgController->updateAll();
+}

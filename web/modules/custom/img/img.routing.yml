@@ -1,0 +1,6 @@
+#img.showImage:
+#  path: '/api/v1/img/{node}'
+#  defaults:
+#    _controller: '\Drupal\img\Controller\ImgController::showImage'
+#  requirements:
+#    _permission: 'access content'
