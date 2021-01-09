@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+  mysql:
+    image: mariadb
+    volumes:
+      - data:/var/lib/mysql
+      - ./dump:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "drupal"
+    ports:
+      - "3306:3306"
+
+  drupal:
+    build: ./
+    volumes:
+      - ./web/themes:/var/www/html/themes
+      - ./web/modules:/var/www/html/modules
+      - ./web/sites:/var/www/html/sites
+      - ./config:/opt/drupal/config
+      - ./composer.json:/opt/drupal/composer.json
+      - ./composer.lock:/opt/drupal/composer.lock
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - mysql
+
+volumes:
+  data: {}
