@@ -1,0 +1,11 @@
+name: pu10g theme
+type: theme
+base theme: false
+core_version_requirement: 9.x
+libraries:
+  - pu10g/styling
+regions:
+  header: Header
+  content: Content
+  sidebar: Sidebar
+  footer: Footer

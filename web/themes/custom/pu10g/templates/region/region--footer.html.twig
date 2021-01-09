@@ -1,0 +1,25 @@
+{#
+/**
+  * @file
+  * Default theme implementation to display a region.
+  *
+  * Available variables:
+  * - content: The content for this region, typically blocks.
+  * - attributes: HTML attributes for the region <div>.
+  * - region: The name of the region variable as defined in the theme's
+  *   .info.yml file.
+  *
+  * @see template_preprocess_region()
+  *
+  * @ingroup themeable
+  */
+#}
+{% if content %}
+<footer{{ attributes.addClass('uk-light', 'uk-background-secondary', 'uk-padding', 'region', 'footer') }}>
+  <div class="uk-container uk-container-xlarge uk-margin-auto">
+    <div class="uk-child-width-1-2@s" uk-grid>
+        {{ content }}
+    </div>
+  </div>
+</footer>
+{% endif %}

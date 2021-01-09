@@ -1,0 +1,4 @@
+styling:
+  version: 1.x
+  js:
+    js/bundle.js: {}

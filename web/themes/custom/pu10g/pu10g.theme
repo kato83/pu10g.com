@@ -1,0 +1,152 @@
+<?php
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * html.html.twig hock
+ */
+function pu10g_preprocess_html(&$variables)
+{
+
+  $request = \Drupal::request();
+
+  $ogTitle = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'og:title',
+      'content' => implode(' | ', $variables['head_title']),
+    ]
+  ];
+
+  $ogUrl = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'og:url',
+      'content' => "{$request->getSchemeAndHttpHost()}{$request->getRequestUri()}",
+    ]
+  ];
+
+  $routeName = \Drupal::routeMatch()->getRouteName();
+  $isPreview = $routeName === 'entity.node.preview';
+  $node = \Drupal::routeMatch()->getParameter($isPreview ? 'node_preview' : 'node');
+  $img = '';
+  if (!empty($node)) {
+    // @todo コンテンツ単位でセットした画像があればそちらをOGPとして設定する
+    $isSetImage = $node->hasField('field_list_image') && !empty($node->get('field_list_image')->getValue());
+    $img = "{$request->getSchemeAndHttpHost()}/sites/default/files/article/{$node->id()}.jpg";
+  } else {
+    $img = "{$request->getSchemeAndHttpHost()}/sites/default/files/og.png";
+  }
+  $ogImage = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'og:image',
+      'content' => $img,
+    ]
+  ];
+
+  $twitterCard = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'property' => 'twitter:card',
+      'content' => 'summary',
+    ]
+  ];
+
+  $themeDir = '/' . \Drupal::theme()->getActiveTheme()->getPath();
+  $appleTouchIcon = [
+    '#tag' => 'link',
+    '#attributes' => [
+      'rel' => 'apple-touch-icon',
+      'size' => '256x256',
+      'href' => "{$themeDir}/apple-touch-icon.png",
+    ]
+  ];
+
+  $variables['page']['#attached']['html_head'][] = [$ogTitle, 'og_title'];
+  $variables['page']['#attached']['html_head'][] = [$ogUrl, 'og_url'];
+  $variables['page']['#attached']['html_head'][] = [$ogImage, 'og_image'];
+  $variables['page']['#attached']['html_head'][] = [$twitterCard, 'twitter_card'];
+  $variables['page']['#attached']['html_head'][] = [$appleTouchIcon, 'apple_touch_icon'];
+}
+
+/**
+ * node--article.html.twig hock
+ */
+function pu10g_preprocess_node__article(&$variables)
+{
+  $request = \Drupal::request();
+
+  $site_config = \Drupal::config('system.site');
+  $share_title = array(
+    'title' => $variables['node']->getTitle(),
+    'name' => $site_config
+      ->get('name'),
+  );
+  $variables['share_title'] = $share_title;
+  $variables['share_url'] = $request->getSchemeAndHttpHost();
+}
+
+/**
+ * region--content.html.twig hook
+ */
+function pu10g_preprocess_region__content(&$variables)
+{
+  $routeName = \Drupal::routeMatch()->getRouteName() ?? '';
+
+  $variables['container_size'] = 'xxsmall';
+  if (
+    0 === strpos($routeName, 'view.frontpage') || 0 === strpos($routeName, 'entity.taxonomy_term')
+  ) {
+    $variables['container_size'] = 'xlarge';
+  } else if (0 === strpos($routeName, 'entity.node')) {
+    $isPreview = $routeName === 'entity.node.preview';
+    $node = \Drupal::routeMatch()->getParameter($isPreview ? 'node_preview' : 'node');
+    if (!$node->hasField('field_tag')) {
+      return;
+    }
+    $terms = Term::loadMultiple(array_column($node->get('field_tag')->getValue(), 'target_id'));
+    $termNarrowFlg = in_array(true, array_map(function ($term) {
+      return $term->hasField('field_container_narrow_flg') && $term->get('field_container_narrow_flg')->getString() === '1';
+    }, $terms));
+    $variables['container_size'] = $termNarrowFlg ? 'xxxsmall' : $variables['container_size'];
+  }
+}
+
+/**
+ * form_element のテンプレート候補を作成
+ */
+function pu10g_theme_suggestions_form_element_alter(array &$suggestions, array $variables)
+{
+  $suggestions[] = 'form_element__' . $variables['element']['#type'];
+}
+
+/**
+ * input--search.html.twig hook
+ */
+function pu10g_preprocess_input__search(&$variables)
+{
+  $element = $variables['element'];
+  $variables['placeholder'] = [
+    '#markup' => $element['#title'],
+  ];
+}
+
+/**
+ * input--search.html.twig hook
+ */
+function pu10g_preprocess_form_element__search(&$variables)
+{
+  $variables['label_display'] = false;
+}
+
+/**
+ * page-title.html.twig hook
+ */
+function pu10g_preprocess_page_title(&$variables)
+{
+  $routeName = \Drupal::routeMatch()->getRouteName();
+  if ($routeName === 'search.view_node_search' || 0 === strpos($routeName, 'view.frontpage')) {
+    $variables['title'] = false;
+  }
+}

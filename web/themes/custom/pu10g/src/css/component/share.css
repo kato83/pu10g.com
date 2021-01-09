@@ -1,0 +1,63 @@
+/* シェアコンポーネント */
+.share-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.share-list-item {
+  flex-grow: 1;
+  height: 50px;
+  line-height: 50px;
+  min-width: 100px;
+  text-align: center;
+}
+
+.share-list-link {
+  user-select: none;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  transition: opacity ease-in-out .2s;
+  color: #ffffff;
+}
+
+.share-list-link:hover {
+  background: #ffffff;
+  color: #ffffff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.share-list-link.icon-twitter {
+  background: #55acee;
+}
+
+.share-list-link.icon-facebook {
+  background: #3B5998;
+}
+
+.share-list-link.icon-hatebu {
+  background: #008FDE;
+}
+
+.share-list-link.icon-pocket {
+  background: #EB4654;
+}
+
+.share-list-link.icon-rss {
+  background: #ff9900;
+}
+
+.share-list-link.icon-feedly {
+  background: #6cc655;
+}
+
+.share-list-link.icon-line {
+  background: #1dcd00;
+}
