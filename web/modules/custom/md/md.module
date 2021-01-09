@@ -1,0 +1,12 @@
+<?php
+function md_theme() {
+  $theme = [];
+
+  $theme['makdown_default'] = [
+    'variables' => [
+      'value' => NULL,
+    ],
+  ];
+
+  return $theme;
+}

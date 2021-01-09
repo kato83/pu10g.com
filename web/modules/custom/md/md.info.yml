@@ -1,0 +1,4 @@
+name: Markdown field
+type: module
+description: 'markdown field.'
+core_version_requirement: 9.x
