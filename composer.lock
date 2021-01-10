@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b82c95d1151339379ae006d984308f47",
+    "content-hash": "2efdf18aade16d9b403b5b43277043a6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7110,6 +7110,22 @@
             "time": "2021-01-10T15:22:50+00:00"
         },
         {
+            "name": "ykato/pu10g",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "http://192.168.1.22:8080/git/ykato/pu10g.com-theme.git",
+                "reference": "d0098e9439c6388f3305dac324eafee6ee8cc589"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-theme",
+            "license": [
+                "MIT"
+            ],
+            "homepage": "https://pu10g.com/",
+            "time": "2021-01-10T16:09:58+00:00"
+        },
+        {
             "name": "ykato/pu10g_com_img",
             "version": "dev-master",
             "source": {
@@ -7131,6 +7147,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "ykato/md": 20,
+        "ykato/pu10g": 20,
         "ykato/pu10g_com_img": 20
     },
     "prefer-stable": true,
