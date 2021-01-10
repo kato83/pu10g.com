@@ -12,7 +12,6 @@ module:
   file: 0
   filter: 0
   image: 0
-  img: 0
   language: 0
   locale: 0
   md: 0
@@ -22,6 +21,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  pu10g_com_img: 0
   search: 0
   simple_sitemap: 0
   system: 0
