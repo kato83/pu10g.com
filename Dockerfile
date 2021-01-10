@@ -81,6 +81,9 @@ RUN composer require drupal/console \
     && ln -s /opt/drupal/vendor/bin/drupal /usr/local/bin/drupal \
     && drupal --version
 
+# Gitをインストールする
+RUN apt-get install -y git
+
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
 
 # vim:set ft=dockerfile:

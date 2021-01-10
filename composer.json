@@ -12,6 +12,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url": "http://192.168.1.22:8080/git/ykato/pu10g.com-img.git"
         }
     ],
     "scripts": {
@@ -28,7 +32,8 @@
         "drupal/core-recommended": "^9",
         "drupal/paragraphs": "^1.12",
         "drupal/simple_sitemap": "^3.8",
-        "drush/drush": "^10.2"
+        "drush/drush": "^10.2",
+        "ykato/pu10g_com_img": "dev-master"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -36,7 +41,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "secure-http": false
     },
     "extra": {
         "drupal-scaffold": {
