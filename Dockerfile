@@ -15,6 +15,7 @@ RUN set -eux; \
 		libfreetype6-dev \
 		libjpeg-dev \
 		libpng-dev \
+		libwebp-dev \
 		libpq-dev \
 		libzip-dev \
 	; \
@@ -22,6 +23,7 @@ RUN set -eux; \
 	docker-php-ext-configure gd \
 		--with-freetype \
 		--with-jpeg=/usr \
+		--with-webp=/usr \
 	; \
 	\
 	docker-php-ext-install -j "$(nproc)" \
@@ -82,7 +84,7 @@ RUN composer require drupal/console \
     && drupal --version
 
 # Gitをインストールする
-RUN apt-get install -y git
+RUN apt-get -y update && apt-get install -y git
 
 ENV PATH=${PATH}:/opt/drupal/vendor/bin
 

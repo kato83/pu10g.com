@@ -7096,7 +7096,7 @@
             "source": {
                 "type": "git",
                 "url": "http://192.168.1.22:8080/git/ykato/pu10g.com-img.git",
-                "reference": "47c4f5386db54aefe90543431b7fb9071ce3583a"
+                "reference": "349386a8666efbfd5ba29ae62821ea73f2a0a37f"
             },
             "default-branch": true,
             "type": "drupal-custom-module",
@@ -7104,7 +7104,7 @@
                 "MIT"
             ],
             "homepage": "https://pu10g.com/",
-            "time": "2021-01-10T12:57:45+00:00"
+            "time": "2021-01-10T13:17:31+00:00"
         }
     ],
     "packages-dev": [],
