@@ -16,6 +16,10 @@
         {
             "type": "vcs",
             "url": "http://192.168.1.22:8080/git/ykato/pu10g.com-img.git"
+        },
+        {
+            "type": "vcs",
+            "url": "http://192.168.1.22:8080/git/ykato/pu10g.com-md.git"
         }
     ],
     "scripts": {
@@ -32,6 +36,7 @@
         "drupal/paragraphs": "^1.12",
         "drupal/simple_sitemap": "^3.8",
         "drush/drush": "^10.2",
+        "ykato/md": "dev-master",
         "ykato/pu10g_com_img": "dev-master"
     },
     "conflict": {
