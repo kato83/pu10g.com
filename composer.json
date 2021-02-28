@@ -29,6 +29,9 @@
     "scripts": {
         "drush": [
             "drush < /dev/tty"
+        ],
+        "d": [
+            "drush"
         ]
     },
     "require": {
