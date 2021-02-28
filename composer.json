@@ -30,7 +30,7 @@
         "drush": [
             "drush < /dev/tty"
         ],
-        "d": [
+        "drushnottty": [
             "drush"
         ]
     },
