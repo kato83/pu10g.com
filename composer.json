@@ -41,8 +41,8 @@
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/paragraphs": "^1.12",
-        "drupal/simple_sitemap": "^3.8",
-        "drush/drush": "^10.2",
+        "drupal/simple_sitemap": "^3.10",
+        "drush/drush": "^10.5",
         "ykato/md": "dev-master",
         "ykato/pu10g": "dev-master",
         "ykato/pu10g_com_img": "dev-master"
