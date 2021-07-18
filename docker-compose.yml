@@ -25,6 +25,12 @@ services:
       - "8081:80"
     depends_on:
       - mysql
+  webpack:
+    image: node:12
+    volumes:
+      - ./web/themes/custom/pu10g:/opt/webpack
+    working_dir: /opt/webpack
+    command: bash -c "npm install && npm run webpack"
 
 volumes:
   data: {}
